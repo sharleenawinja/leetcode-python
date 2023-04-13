@@ -6,3 +6,14 @@ name = input("What is your name: ")
 age = int(input("How old are you: "))
 year = 2023 - age + 100
 print(name + ", you will be 100 years old in the year " + str(year))
+
+# creating a function
+def hundredth_year(name, age):
+    year = 2023 - int(age) + 100
+    message = name + ", you will be a hundred years old in the year " + str(year)
+    return message
+
+name = input ("What is your name: ")  
+age = input("How old are you: ")
+message = hundredth_year(name, age)
+print(message) 
