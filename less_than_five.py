@@ -21,13 +21,18 @@
 
 # print(list_of_less_than_five([1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]))  
 
-# Ask the user for a number and return a list that contains only elements from the original list a that are smaller than that number given by the user.
-def less_than_num(numList, num):
-    less_than = []
-    for element in numList:
-        if element < num:
-            less_than.append(element)
-    return less_than 
+# doing it in one line
+# using list comprehension
+a = [1, 2, 3, 4, 5, 6, 7,]
+print( [ x for x in a if x<5 ] )
 
-numInput = int(input("Enter any number: "))  
-print(less_than_num([1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89], numInput))         
+# Ask the user for a number and return a list that contains only elements from the original list a that are smaller than that number given by the user.
+# def less_than_num(numList, num):
+#     less_than = []
+#     for element in numList:
+#         if element < num:
+#             less_than.append(element)
+#     return less_than 
+
+# numInput = int(input("Enter any number: "))  
+# print(less_than_num([1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89], numInput))         
