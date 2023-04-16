@@ -19,4 +19,16 @@ def list_overlap(first_list, second_list):
         return overlapping
 
 
-print(list_overlap([1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]))          
+print(list_overlap([1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]))   
+
+# second method
+def second_list_overlap(first_list, second_list):
+    # Use a set instead of a list to store the overlapping elements. This will eliminate duplicates automatically and improve performance for large lists.
+    # Instead of using an if statement to determine which list is shorter, we can use the set() function to create a set from each list and use the & operator to find the intersection of the sets. 
+    # This will give us a set containing only the elements that are common to both lists, without duplicates.
+    set1 = set(first_list)
+    set2 = set(second_list)
+    overlapping = set1 & set2
+    return list(overlapping)
+
+print(second_list_overlap([1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]))
