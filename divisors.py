@@ -10,3 +10,19 @@ def find_divisors(test_num):
 
 input_num = int(input("Enter any number: "))
 find_divisors(input_num)
+
+# second method
+# using a list
+num = int(input("Enter a number: "))
+
+# Create an empty list to store divisors
+divisors = []
+
+# Iterate over all possible divisors from 1 to num
+for i in range(1, num + 1):
+    if num % i == 0:
+        divisors.append(i)
+
+# Print the list of divisors
+print("The divisors of", num, "are:", divisors)
+
