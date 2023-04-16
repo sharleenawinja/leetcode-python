@@ -41,3 +41,14 @@ a = random.sample(range(1, 100), 10)
 b = random.sample(range(1, 100), 15)
 overlap = list(set(a) & set(b))
 print(overlap)
+
+# To implement the solution in one line of Python, we can use a list comprehension:
+# This implementation uses a list comprehension to create a list containing only the elements of a that are also in b
+# the set() function is used to remove duplicates. 
+# The list() function is then used to convert the set back to a list, which is printed to the console.
+import random
+
+a = random.sample(range(1, 100), 10)
+b = random.sample(range(1, 100), 15)
+overlap = list(set([x for x in a if x in b]))
+print(overlap)
