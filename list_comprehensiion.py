@@ -30,6 +30,8 @@ print("ages", ages)
 list_of_ages = [2014 - year for year in years_of_birth]
 print("list", list_of_ages)
 
+# list comprehension condensed the for loop and the list appending into one simple line
+
 
 
 
