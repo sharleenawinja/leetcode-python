@@ -67,6 +67,30 @@ def guess_number():
 
 guess_number()
 
+# five guesses only
+import random
+
+def guess_number():
+    random_number = random.randint(1, 9)
+    for i in range(5):
+        user_guess = input("Guess a number between 1 and 9: ")
+        try:
+            user_guess = int(user_guess)
+        except ValueError:
+            print("Invalid input. Please enter a number between 1 and 9.")
+            continue
+        if user_guess == random_number:
+            print("Congratulations, you guessed the number!")
+            break
+        elif user_guess < random_number:
+            print("Too low! Guess again.")
+        else:
+            print("Too high! Guess again.")
+    else:
+        print("Sorry, you ran out of guesses. The number was", random_number)
+
+guess_number()
+
 
 
 
