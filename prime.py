@@ -48,3 +48,5 @@ num = int(input("Enter a number: "))
 prime_using_flag(num)
 
 
+# all() function returns True if all items in an iterable are true, otherwise it returns false
+# if the iterable object is empty the all() function returns true
