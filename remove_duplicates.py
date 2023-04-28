@@ -16,3 +16,9 @@ print(remove_duplicates_2(names))
 def remove_duplicates_3(lst):
     return [item for index, item in enumerate(lst) if item not in lst[:index]]
 print(remove_duplicates_3(names))
+
+from collections import OrderedDict
+
+def remove_duplicates_4(lst):
+    return list(OrderedDict.fromkeys(lst).keys())
+print(remove_duplicates_4(names))
