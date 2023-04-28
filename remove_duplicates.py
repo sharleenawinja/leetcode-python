@@ -12,3 +12,7 @@ print(remove_duplicates_1(names))
 def remove_duplicates_2(lst):
     return list(set(lst))
 print(remove_duplicates_2(names))
+
+def remove_duplicates_3(lst):
+    return [item for index, item in enumerate(lst) if item not in lst[:index]]
+print(remove_duplicates_3(names))
