@@ -22,3 +22,13 @@ from collections import OrderedDict
 def remove_duplicates_4(lst):
     return list(OrderedDict.fromkeys(lst).keys())
 print(remove_duplicates_4(names))
+
+def remove_duplicates_5(lst):
+    i = 0
+    while i < len(lst):
+        if lst.count(lst[i]) > 1:
+            lst.remove(lst[i])
+        else:
+            i += 1
+    return lst
+print(remove_duplicates_5(names))
