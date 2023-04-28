@@ -8,3 +8,7 @@ def remove_duplicates_1(lst):
 
 names = ["Michele", "Robin", "Sara", "Michele"]
 print(remove_duplicates_1(names))
+
+def remove_duplicates_2(lst):
+    return list(set(lst))
+print(remove_duplicates_2(names))
