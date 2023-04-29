@@ -20,3 +20,13 @@ reversed_string = " ".join(reversed_words)
 
 print("The same string, except with the words in backwards order:")
 print(reversed_string)
+
+# using slicing
+input_string = input("Enter a long string containing multiple words: ")
+
+words = input_string.split()
+reversed_words = words[::-1]
+reversed_string = " ".join(reversed_words)
+
+print("The same string, except with the words in backwards order:")
+print(reversed_string)
