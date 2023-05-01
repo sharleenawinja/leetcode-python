@@ -8,3 +8,7 @@ def find_largest(a, b, c):
         return b
     else:
         return c
+    
+# using built in max method
+def find_largest(a, b, c):
+    return max(a, b, c)
