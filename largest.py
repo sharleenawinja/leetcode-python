@@ -16,3 +16,9 @@ def find_largest(a, b, c):
 # using a ternary operator
 def find_largest(a, b, c):
     return a if (a > b and a > c) else (b if (b > a and b > c) else c)
+
+# using lambda and reduce
+from functools import reduce
+
+def find_largest(a, b, c):
+    return reduce(lambda x, y: x if (x > y) else y, [a, b, c])
