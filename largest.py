@@ -22,3 +22,7 @@ from functools import reduce
 
 def find_largest(a, b, c):
     return reduce(lambda x, y: x if (x > y) else y, [a, b, c])
+
+# using sorted and list indexing
+def find_largest(a, b, c):
+    return sorted([a, b, c])[-1]
