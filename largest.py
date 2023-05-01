@@ -12,3 +12,7 @@ def find_largest(a, b, c):
 # using built in max method
 def find_largest(a, b, c):
     return max(a, b, c)
+
+# using a ternary operator
+def find_largest(a, b, c):
+    return a if (a > b and a > c) else (b if (b > a and b > c) else c)
